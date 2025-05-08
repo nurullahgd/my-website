@@ -42,7 +42,7 @@ A modern and responsive personal blog and portfolio website built with React and
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/my-website.git
+   git clone https://github.com/nurullahgd/my-website.git
    cd my-website
    ```
 
