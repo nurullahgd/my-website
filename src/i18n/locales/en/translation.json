@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "home": {
+    "title": "NURULLAH GÜNDOĞDU",
+    "softwareDeveloper": "SOFTWARE DEVELOPER",
+    "description": "Hello! I'm a software developer working passionately in software development. While coding, I prioritize not just functionality, but also aesthetics and user experience.",
+    "aboutButton": "About Me",
+    "techTitle": "Software Developer",
+    "techDescription": "One step further, the best"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hello! I'm Nurullah Gündoğdu. I'm a software developer working passionately in software development. While coding, I prioritize not just functionality, but also aesthetics and user experience. I closely follow modern technologies and aim to push myself one step further in every project. Creating simple yet powerful solutions that make a difference in the digital world is not just a job for me, but also a way of life.",
+    "education": "Management Information Systems Computer Programming"
+  },
+  "blog": {
+    "title": "Blog",
+    "comingSoon": "Content coming soon..."
+  },
+  "language": {
+    "tr": "Turkish",
+    "en": "English",
+    "select": "Select Language"
+  }
+} 

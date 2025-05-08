@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "blog": "Blog",
+    "about": "Hakkımda"
+  },
+  "home": {
+    "title": "NURULLAH GÜNDOĞDU",
+    "softwareDeveloper": "YAZILIM GELİŞTİRİCİ",
+    "description": "Merhaba! Yazılım alanında tutkuyla çalışan bir yazılım geliştiricisiyim. Kod yazarken sadece işlevsellik değil, aynı zamanda estetik ve kullanıcı deneyimini de ön planda tutarım.",
+    "aboutButton": "Hakkımda",
+    "techTitle": "Yazılım Geliştirici",
+    "techDescription": "Daha ileriye, en iyiye"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "description": "Merhaba! Ben Nurullah Gündoğdu. Yazılım alanında tutkuyla çalışan bir yazılım geliştiricisiyim. Kod yazarken sadece işlevsellik değil, aynı zamanda estetik ve kullanıcı deneyimini de ön planda tutarım. Modern teknolojileri yakından takip eder, her projede kendimi bir adım daha ileri taşımayı hedeflerim. Dijital dünyada fark yaratan, sade ama güçlü çözümler üretmek benim için sadece bir iş değil, aynı zamanda bir yaşam biçimi.",
+    "education": "Yönetim Bilişim Sistemleri Bilgisayar Programcılığı"
+  },
+  "blog": {
+    "title": "Blog",
+    "comingSoon": "Yakında içerikler eklenecek..."
+  },
+  "language": {
+    "tr": "Türkçe",
+    "en": "İngilizce",
+    "select": "Dil Seç"
+  }
+} 
