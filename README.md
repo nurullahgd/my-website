@@ -42,8 +42,8 @@ A modern and responsive personal blog and portfolio website built with React and
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/my-blog-website.git
-   cd my-blog-website
+   git clone https://github.com/yourusername/my-website.git
+   cd my-website
    ```
 
 2. Install dependencies
@@ -76,7 +76,7 @@ The build artifacts will be stored in the `build/` directory.
 ## Project Structure
 
 ```
-my-blog-website/
+my-website/
 ├── public/           # Public assets
 ├── src/
 │   ├── components/   # Reusable components
