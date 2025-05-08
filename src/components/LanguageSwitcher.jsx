@@ -6,9 +6,6 @@ import {
   MenuList, 
   MenuItem, 
   Button, 
-  Flex, 
-  Box,
-  useColorModeValue 
 } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 

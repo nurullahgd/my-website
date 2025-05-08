@@ -7,13 +7,12 @@ import {
   VStack,
   Button,
   Flex,
-  HStack,
   Badge,
   chakra,
   SimpleGrid,
 } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
-import { FaReact, FaNodeJs, FaJs, FaCode } from 'react-icons/fa';
+import { FaReact, FaJs, FaCode } from 'react-icons/fa';
 import { FaGolang } from "react-icons/fa6";
 import { DiMongodb } from "react-icons/di";
 import { PiFileSqlThin } from "react-icons/pi";
