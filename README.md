@@ -112,6 +112,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Nurullah Gündoğdu - nurullahgundogdu2304@gmail.com
 
-Project Github Link: [https://github.com/nurullahgd/my-blog-website](https://github.com/nurullahgd/my-blog-website)
+Project Github Link: [https://github.com/nurullahgd/my-website](https://github.com/nurullahgd/my-website)
 
 Project Live Link: [https://nurullahgundogdu.com](https://nurullahgundogdu.com)
