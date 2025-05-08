@@ -2,7 +2,7 @@
 
 A modern and responsive personal blog and portfolio website built with React and Chakra UI, featuring multilingual support (English and Turkish).
 
-![Website Screenshot](https://https://i.hizliresim.com/b8aamxt.png)
+![Website Screenshot](https://i.hizliresim.com/b8aamxt.png)
 
 ## Features
 
