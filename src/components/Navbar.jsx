@@ -96,6 +96,7 @@ const Navbar = () => {
         )}
 
         {/* Orta Başlık */}
+        
         <Heading
           as="h1"
           size={{ base: "md", md: "lg" }}
@@ -105,6 +106,8 @@ const Navbar = () => {
           letterSpacing="wider"
           textShadow="0 0 5px #BC13FE"
           animation={`${neonFlicker} 5s infinite alternate`}
+          onClick={() => window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'}
+          cursor="pointer"
         >
           Nurullah Gündoğdu
         </Heading>
