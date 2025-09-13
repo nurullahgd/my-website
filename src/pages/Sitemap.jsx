@@ -23,13 +23,6 @@ const Sitemap = () => {
   // XML olarak response döndür
   useEffect(() => {
     if (sitemapXML && !loading) {
-      // Content-Type header'ı ayarla
-      const response = new Response(sitemapXML, {
-        headers: {
-          'Content-Type': 'application/xml; charset=utf-8',
-        },
-      });
-
       // Tarayıcıya XML olarak gönder
       window.location.href = `data:application/xml;charset=utf-8,${encodeURIComponent(sitemapXML)}`;
     }
