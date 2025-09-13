@@ -7,7 +7,6 @@ import {
   VStack,
   Button,
   HStack,
-  Flex,
   Icon,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
