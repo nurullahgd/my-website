@@ -25,5 +25,15 @@
     "tr": "Türkçe",
     "en": "İngilizce",
     "select": "Dil Seç"
+  },
+  "notFound": {
+    "title": "404 - Sayfa Bulunamadı",
+    "oops": "Oops, sanırım bir şeyler denemeye çalışıyorsun! 🤔",
+    "description": "Aradığın sayfa bu galaksiye ait değil gibi görünüyor. Belki de yanlış koordinatlara girdin?",
+    "suggestions": "İşte sana yardımcı olabilecek bazı linkler:",
+    "goHome": "Ana Sayfaya Dön",
+    "exploreBlog": "Blog'u Keşfet",
+    "learnAbout": "Hakkımda Öğren",
+    "funFact": "💡 İlginç Bilgi: 404 hatası, gerçek bir oda numarasından geliyor!"
   }
 } 

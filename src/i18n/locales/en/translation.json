@@ -25,5 +25,15 @@
     "tr": "Turkish",
     "en": "English",
     "select": "Select Language"
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "oops": "Oops, I think you are trying something! 🤔",
+    "description": "The page you're looking for doesn't seem to belong to this galaxy. Maybe you entered the wrong coordinates?",
+    "suggestions": "Here are some links that might help you:",
+    "goHome": "Go Home",
+    "exploreBlog": "Explore Blog",
+    "learnAbout": "Learn About Me",
+    "funFact": "💡 Fun Fact: The 404 error comes from a real room number!"
   }
 } 

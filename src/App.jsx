@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import theme from './theme';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
+import BlogDetail from './pages/BlogDetail';
 import About from './pages/About';
+import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';
 import FuturisticBackground from './components/FuturisticBackground';
 
@@ -18,7 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id/:slug" element={<BlogDetail />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </ChakraProvider>
