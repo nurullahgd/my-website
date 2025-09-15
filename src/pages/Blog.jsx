@@ -97,11 +97,25 @@ const Blog = () => {
                     h="180px"
                   />
                   <Box p={5} flex="1">
-                    <Flex justify="space-between" align="center" mb={2}>
-                      <Heading as="h2" size="md" noOfLines={1}>
+                    <Flex justify="space-between" align="flex-start" mb={2} gap={2}>
+                      <Heading 
+                        as="h2" 
+                        size={{ base: "sm", md: "md" }}
+                        fontSize={{ base: "14px", md: "16px" }}
+                        lineHeight="1.3"
+                        noOfLines={2}
+                        flex="1"
+                        minW="0"
+                      >
                         {i18n.language === "tr" ? blog.title.tr_title : blog.title.en_title}
                       </Heading>
-                      <Text fontSize="sm" color="gray.400">
+                      <Text 
+                        fontSize="xs" 
+                        color="gray.400"
+                        whiteSpace="nowrap"
+                        flexShrink={0}
+                        minW="fit-content"
+                      >
                         {new Date(blog.created_at).toLocaleDateString(i18n.language === "tr" ? "tr-TR" : "en-US")}
                       </Text>
                     </Flex>

@@ -30,13 +30,7 @@
 
   <!-- Blog Detay Sayfaları -->
   <url>
-    <loc>https://nurullahgundogdu.com/blog/test</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nurullahgundogdu.com/blog/english-tit</loc>
+    <loc>https://nurullahgundogdu.com/blog/structs-and-error-handling-in-go-best-practices</loc>
     <lastmod>2025-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
