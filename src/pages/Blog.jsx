@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { 
   Box, 
   Container, 
@@ -45,7 +46,11 @@ const Blog = () => {
   }
 
   return (
-    <Box as="main" minH="calc(100vh - 70px)" py={{ base: 10, md: 20 }} position="relative">
+    <>
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
+      <Box as="main" minH="calc(100vh - 70px)" py={{ base: 10, md: 20 }} position="relative">
       <Container maxW="container.lg">
         <VStack spacing={{ base: 6, md: 12 }} align="stretch">
           <VStack spacing={4} textAlign="center" mb={{ base: 8, md: 12 }}>
@@ -158,6 +163,7 @@ const Blog = () => {
         zIndex="-1"
       />
     </Box>
+    </>
   );
 };
 

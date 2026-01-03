@@ -11,7 +11,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import { FaGraduationCap, FaLaptopCode, FaServer, FaBriefcase, FaCloud, FaMobile } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaServer, FaCloud, FaMobile } from 'react-icons/fa';
 import { keyframes } from '@emotion/react';
 
 // Animasyon

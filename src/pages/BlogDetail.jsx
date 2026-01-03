@@ -70,21 +70,7 @@ const BlogDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{blogTitle} - Nurullah Gündoğdu</title>
-        <meta name="description" content={i18n.language === "tr" ? blog.summary.tr_summary : blog.summary.en_summary} />
-        <meta property="og:title" content={blogTitle} />
-        <meta property="og:description" content={i18n.language === "tr" ? blog.summary.tr_summary : blog.summary.en_summary} />
-        <meta property="og:image" content={blog.main_image} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://nurullahgundogdu.com/blog/${blog.slug}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={blogTitle} />
-        <meta name="twitter:description" content={i18n.language === "tr" ? blog.summary.tr_summary : blog.summary.en_summary} />
-        <meta name="twitter:image" content={blog.main_image} />
-        <meta property="article:published_time" content={blog.created_at} />
-        <meta property="article:modified_time" content={blog.updated_at} />
-        <meta property="article:author" content="Nurullah Gündoğdu" />
-        <link rel="canonical" href={`https://nurullahgundogdu.com/blog/${blog.slug}`} />
+        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <Box as="main" minH="calc(100vh - 70px)" py={{ base: 10, md: 20 }}>
         <Container maxW="container.md">

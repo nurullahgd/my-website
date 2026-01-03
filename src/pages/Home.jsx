@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {
   Box,
   Container,
@@ -120,13 +121,29 @@ const Home = () => {
   const { t } = useTranslation();
   
   return (
-    <Box
-      as="main"
-      minH="calc(100vh - 70px)"
-      py={{ base: 10, md: 20 }}
-      position="relative"
-      overflow="hidden"
-    >
+    <>
+      <Helmet>
+        <title>Nurullah Gündoğdu - Backend Developer | Golang, Microservices, Kubernetes</title>
+        <meta name="description" content="Nurullah Gündoğdu - Backend Developer specializing in Golang, microservices architecture, Docker, Kubernetes, and scalable backend systems. Building high-performance solutions with modern cloud technologies." />
+        <meta name="keywords" content="Nurullah Gündoğdu, Backend Developer, Golang Developer, Software Developer, Microservices, Kubernetes, Docker, PostgreSQL, MongoDB, Redis, Backend Specialist, Turkey, Türkiye" />
+        <meta name="author" content="Nurullah Gündoğdu" />
+        <meta property="og:title" content="Nurullah Gündoğdu - Backend Developer" />
+        <meta property="og:description" content="Backend Developer specializing in Golang, microservices architecture, Docker, Kubernetes, and scalable backend systems." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://nurullahgundogdu.com" />
+        <meta property="og:site_name" content="Nurullah Gündoğdu" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Nurullah Gündoğdu - Backend Developer" />
+        <meta name="twitter:description" content="Backend Developer specializing in Golang, microservices architecture, Docker, Kubernetes, and scalable backend systems." />
+        <link rel="canonical" href="https://nurullahgundogdu.com" />
+      </Helmet>
+      <Box
+        as="main"
+        minH="calc(100vh - 70px)"
+        py={{ base: 10, md: 20 }}
+        position="relative"
+        overflow="hidden"
+      >
       {/* Ana içerik */}
       <Container maxW="container.lg" position="relative" zIndex={1}>
         <Flex
@@ -307,6 +324,7 @@ const Home = () => {
         </svg>
       </Box>
     </Box>
+    </>
   );
 };
 
