@@ -20,8 +20,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogDetail />} />
+          <Route path="/projects" element={<Blog />} />
+          <Route path="/projects/:slug" element={<BlogDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/sitemap.xml" element={<Sitemap />} />
           <Route path="*" element={<NotFound />} />

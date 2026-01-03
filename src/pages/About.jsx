@@ -11,7 +11,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
-import { FaGraduationCap, FaLaptopCode, FaServer, FaBriefcase, FaDocker, FaGit, FaCloud, FaCodeBranch } from 'react-icons/fa';
+import { FaGraduationCap, FaLaptopCode, FaServer, FaBriefcase, FaCloud, FaMobile } from 'react-icons/fa';
 import { keyframes } from '@emotion/react';
 
 // Animasyon
@@ -50,14 +50,15 @@ const About = () => {
           
           <Flex 
             direction={{ base: "column", lg: "row" }}
-            align="center" 
-            justify="space-between"
-            gap={{ base: 8, lg: 16 }}
+            align={{ base: "center", lg: "flex-start" }}
+            justify="flex-start"
+            gap={{ base: 8, lg: 12 }}
           >
             <Box 
-              flex={{ lg: 3 }}
+              flex={{ lg: "1 1 60%" }}
               order={{ base: 2, lg: 1 }}
               px={{ base: 2, md: 0 }}
+              w={{ base: "100%", lg: "auto" }}
             >
               <Text 
                 fontSize={{ base: "md", md: "lg" }} 
@@ -79,71 +80,52 @@ const About = () => {
                 <SkillCard 
                   icon={FaGraduationCap} 
                   title="Education" 
-                  description=  {t('about.education')}
+                  description={t('about.education')}
                   color="blue.400"
                   delay="0.2s"
                 />
                 <SkillCard 
-                  icon={FaLaptopCode} 
-                  title="Frontend" 
-                  description="React, CSS, JavaScript, TypeScript" 
-                  color="purple.400"
-                  delay="0.4s"
-                />
-                <SkillCard 
                   icon={FaServer} 
-                  title="Backend" 
-                  description="Golang, Express, MongoDB, PostgreSQL, MySQL" 
+                  title={t('about.backendMainFocus')}
+                  description="Golang, Fiber, PostgreSQL, MongoDB, Redis" 
                   color="green.400"
-                  delay="0.6s"
-                />
-                <SkillCard 
-                  icon={FaBriefcase} 
-                  title="Experience" 
-                  description="Web Development, E-commerce" 
-                  color="pink.400"
-                  delay="0.8s"
-                />
-                <SkillCard 
-                  icon={FaDocker} 
-                  title="Docker" 
-                  description="Containerization, Docker Compose" 
-                  color="blue.500"
-                  delay="1.0s"
+                  delay="0.3s"
                 />
                 <SkillCard 
                   icon={FaCloud} 
-                  title="Kubernetes" 
-                  description="Container Orchestration, Deployments" 
+                  title="DevOps & Cloud" 
+                  description="Docker, Kubernetes, CI/CD, Railway" 
                   color="teal.400"
-                  delay="1.2s"
+                  delay="0.4s"
                 />
                 <SkillCard 
-                  icon={FaGit} 
-                  title="Git" 
-                  description="Version Control, GitHub, GitLab" 
-                  color="orange.400"
-                  delay="1.4s"
+                  icon={FaMobile} 
+                  title="Mobile" 
+                  description="React Native (Cross-platform Development)" 
+                  color="cyan.400"
+                  delay="0.5s"
                 />
                 <SkillCard 
-                  icon={FaCodeBranch} 
-                  title="CI/CD" 
-                  description="Continuous Integration/Deployment, GitHub Actions" 
-                  color="red.400"
-                  delay="1.6s"
+                  icon={FaLaptopCode} 
+                  title={t('about.frontendSecondary')}
+                  description="React.js, JavaScript" 
+                  color="purple.400"
+                  delay="0.6s"
                 />
               </SimpleGrid>
             </Box>
             
             {isDesktop && (
               <Box 
-                flex={2}
+                flex={{ lg: "0 0 auto" }}
                 order={{ base: 1, lg: 2 }}
                 position="relative"
+                w={{ lg: "350px" }}
                 h="400px"
                 bg="rgb(5, 6, 27, 0.3)"
                 borderRadius="lg"
                 overflow="hidden"
+                flexShrink={0}
                 sx={{
                   animation: `${fadeIn} 1s ease-out 0.3s forwards`,
                   opacity: 0,

@@ -90,7 +90,7 @@ const Navbar = () => {
         {!isMobile && (
           <Flex gap={8} ml={-4}>
             <NavLink to="/" label={t('nav.home')} />
-            <NavLink to="/blog" label={t('nav.blog')} />
+            <NavLink to="/projects" label={t('nav.blog')} />
             <NavLink to="/about" label={t('nav.about')} />
           </Flex>
         )}
@@ -157,7 +157,7 @@ const Navbar = () => {
           <DrawerBody>
             <VStack spacing={6} align="start" mt={6}>
               <MobileNavLink to="/" label={t('nav.home')} onClose={onClose} />
-              <MobileNavLink to="/blog" label={t('nav.blog')} onClose={onClose} />
+              <MobileNavLink to="/projects" label={t('nav.blog')} onClose={onClose} />
               <MobileNavLink to="/about" label={t('nav.about')} onClose={onClose} />
               
               <Box pt={6} pb={2} w="100%">

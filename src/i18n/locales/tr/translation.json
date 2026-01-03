@@ -1,29 +1,32 @@
 {
   "nav": {
     "home": "Anasayfa",
-    "blog": "Blog",
+    "blog": "Projeler",
     "about": "Hakkımda"
   },
   "home": {
     "title": "NURULLAH GÜNDOĞDU",
     "softwareDeveloper": "YAZILIM GELİŞTİRİCİ",
-    "description": "Merhaba! Yazılım alanında tutkuyla çalışan bir yazılım geliştiricisiyim. Kod yazarken sadece işlevsellik değil, aynı zamanda estetik ve kullanıcı deneyimini de ön planda tutarım.",
+    "description": "Yüksek performanslı mikroservis mimarileri ve ölçeklenebilir sistemler tasarlıyorum. Golang ve Bulut teknolojilerini kullanarak, karmaşık veri akışlarını güvenli ve hızlı çalışan çözümlere dönüştürmeye odaklanıyorum.",
     "aboutButton": "Hakkımda",
+    "cvButton": "CV'yi Görüntüle",
     "techTitle": "Yazılım Geliştirici",
     "techDescription": "Daha ileriye, en iyiye"
   },
   "about": {
     "title": "Hakkımda",
-    "description": "Merhaba! Ben Nurullah Gündoğdu. Yazılım alanında tutkuyla çalışan bir yazılım geliştiricisiyim. Kod yazarken sadece işlevsellik değil, aynı zamanda estetik ve kullanıcı deneyimini de ön planda tutarım. Modern teknolojileri yakından takip eder, her projede kendimi bir adım daha ileri taşımayı hedeflerim. Dijital dünyada fark yaratan, sade ama güçlü çözümler üretmek benim için sadece bir iş değil, aynı zamanda bir yaşam biçimi.",
-    "education": "Yönetim Bilişim Sistemleri Bilgisayar Programcılığı"
+    "description": "Merhaba! Ben Nurullah Gündoğdu. Yazılım dünyasında, buzdağının görünmeyen yüzüne, yani sistemin gücüne odaklanan bir Backend Geliştiriciyim. Benim için yazılım; sadece çalışan kod değil, yüksek trafik altında dahi performansını koruyan, güvenli ve ölçeklenebilir bir mimari demektir. Golang ekosistemi ve modern bulut teknolojilerini (Docker, Kubernetes) kullanarak, karmaşık veri akışlarını yönetilebilir ve sürdürülebilir sistemlere dönüştürüyorum. Dijital dünyada sağlam temeller inşa etmek, benim mühendislik disiplinimdir.",
+    "education": "Yönetim Bilişim Sistemleri Bilgisayar Programcılığı",
+    "backendMainFocus": "Backend (Ana Odak)",
+    "frontendSecondary": "Frontend (İkincil)"
   },
   "blog": {
-    "title": "Blog",
+    "title": "Projeler",
     "comingSoon": "Yakında içerikler eklenecek..."
   },
   "language": {
     "tr": "Türkçe",
-    "en": "İngilizce",
+    "en": "English",
     "select": "Dil Seç"
   },
   "notFound": {
@@ -32,7 +35,7 @@
     "description": "Aradığın sayfa bu galaksiye ait değil gibi görünüyor. Belki de yanlış koordinatlara girdin?",
     "suggestions": "İşte sana yardımcı olabilecek bazı linkler:",
     "goHome": "Ana Sayfaya Dön",
-    "exploreBlog": "Blog'u Keşfet",
+    "exploreBlog": "Projelerime Göz At",
     "learnAbout": "Hakkımda Öğren",
     "funFact": "💡 İlginç Bilgi: 404 hatası, gerçek bir oda numarasından geliyor!"
   }

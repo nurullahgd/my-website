@@ -70,7 +70,7 @@ const Blog = () => {
               {blogs.map((blog) => (
               <ChakraLink
                 as={Link}
-                to={`/blog/${blog.slug}`}
+                to={`/projects/${blog.slug}`}
                 _hover={{ textDecoration: "none" }}
                 key={blog.id}
               >

@@ -1,28 +1,31 @@
 {
   "nav": {
     "home": "Home",
-    "blog": "Blog",
+    "blog": "Projects",
     "about": "About"
   },
   "home": {
     "title": "NURULLAH GÜNDOĞDU",
     "softwareDeveloper": "SOFTWARE DEVELOPER",
-    "description": "Hello! I'm a software developer working passionately in software development. While coding, I prioritize not just functionality, but also aesthetics and user experience.",
+    "description": "Architecting high-performance microservices and scalable backend systems. I focus on transforming complex data flows into secure and fast solutions using Golang and Cloud technologies",
     "aboutButton": "About Me",
+    "cvButton": "View Resume",
     "techTitle": "Software Developer",
     "techDescription": "One step further, the best"
   },
   "about": {
     "title": "About Me",
-    "description": "Hello! I'm Nurullah Gündoğdu. I'm a software developer working passionately in software development. While coding, I prioritize not just functionality, but also aesthetics and user experience. I closely follow modern technologies and aim to push myself one step further in every project. Creating simple yet powerful solutions that make a difference in the digital world is not just a job for me, but also a way of life.",
-    "education": "Management Information Systems Computer Programming"
+    "description": "Hello! I am Nurullah Gündoğdu. I am a Backend Developer focused on the power behind the scenes—the invisible engine that drives digital products. For me, software is more than just working code; it's about architecting systems that remain secure, scalable, and performant even under high traffic. Leveraging the Golang ecosystem and modern cloud technologies (Docker, Kubernetes), I transform complex data flows into manageable and sustainable infrastructures. Building robust foundations in the digital world is my engineering discipline.",
+    "education": "Management Information Systems Computer Programming",
+    "backendMainFocus": "Backend (Main Focus)",
+    "frontendSecondary": "Frontend (Secondary)"
   },
   "blog": {
-    "title": "Blog",
+    "title": "Projects",
     "comingSoon": "Content coming soon..."
   },
   "language": {
-    "tr": "Turkish",
+    "tr": "Türkçe",
     "en": "English",
     "select": "Select Language"
   },
@@ -32,7 +35,7 @@
     "description": "The page you're looking for doesn't seem to belong to this galaxy. Maybe you entered the wrong coordinates?",
     "suggestions": "Here are some links that might help you:",
     "goHome": "Go Home",
-    "exploreBlog": "Explore Blog",
+    "exploreBlog": "Explore Projects",
     "learnAbout": "Learn About Me",
     "funFact": "💡 Fun Fact: The 404 error comes from a real room number!"
   }

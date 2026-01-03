@@ -7,15 +7,11 @@ import {
   VStack,
   Button,
   Flex,
-  Badge,
   chakra,
-  SimpleGrid,
+  HStack,
 } from '@chakra-ui/react';
 import { keyframes } from '@emotion/react';
-import { FaReact, FaJs, FaCode } from 'react-icons/fa';
-import { FaGolang } from "react-icons/fa6";
-import { DiMongodb } from "react-icons/di";
-import { PiFileSqlThin } from "react-icons/pi";
+import { FaCode } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -174,106 +170,50 @@ const Home = () => {
               {t('home.description')}
             </Text>
             
-            <SimpleGrid 
-              columns={{ base: 2, md: 3 }} 
-              spacing={4} 
-              mt={2}
-              w={{ base: "100%", md: "auto" }}
-            >
-              <Badge 
-                colorScheme="purple" 
-                p={2} 
-                fontSize={{ base: "xs", md: "sm" }}
-                variant="solid" 
-                borderRadius="md"
-              >
-                <Flex align="center" gap={2}>
-                  <FaReact />
-                  <Text>React</Text>
-                </Flex>
-              </Badge>
-              
-              {/*<Badge 
-                colorScheme="green" 
-                p={2} 
-                fontSize={{ base: "xs", md: "sm" }}
-                variant="solid" 
-                borderRadius="md"
-              >
-                <Flex align="center" gap={2}>
-                  <FaNodeJs />
-                  <Text>Node.js</Text>
-                </Flex>
-              </Badge>*/}
-              
-              <Badge 
-                colorScheme="yellow" 
-                p={2} 
-                fontSize={{ base: "xs", md: "sm" }}
-                variant="solid" 
-                borderRadius="md"
-              >
-                <Flex align="center" gap={2}>
-                  <FaJs />
-                  <Text>JavaScript</Text>
-                </Flex>
-              </Badge>
-              <Badge 
-                colorScheme="blue" 
-                p={2} 
-                fontSize={{ base: "xs", md: "sm" }}
-                variant="solid" 
-                borderRadius="md"
-              >
-                <Flex align="center" gap={2}>
-                  <FaGolang />
-                  <Text>Golang</Text>
-                </Flex>
-              </Badge>
-              <Badge
-                colorScheme="green" 
-                p={2} 
-                fontSize={{ base: "xs", md: "sm" }}
-                variant="solid" 
-                borderRadius="md"
-              >
-                <Flex align="center" gap={2}>
-                  <DiMongodb />
-                  <Text>MongoDB</Text>
-                </Flex>
-              </Badge>
-              <Badge
-              colorScheme='red'
-              p={2}
-              fontSize={{ base: "xs", md: "sm" }}
-              variant="solid"
-              borderRadius="md"
-              >
-                <Flex align="center" gap={2}>
-                  <PiFileSqlThin />
-                  <Text>SQL</Text>
-                </Flex>
-              </Badge>
-            </SimpleGrid>
             
-            <Button
+            <HStack 
+              spacing={4} 
               mt={{ base: 4, md: 6 }}
-              variant="neon"
-              size={{ base: "md", md: "lg" }}
-              px={8}
-              borderRadius="full"
-              _hover={{
-                transform: 'translateY(-2px)',
-                boxShadow: '0 0 15px #BC13FE',
-              }}
-              _active={{
-                transform: 'translateY(0)',
-              }}
-              as={RouterLink}
-              to="/about"
+              direction={{ base: "column", sm: "row" }}
+              justify={{ base: "center", lg: "flex-start" }}
             >
-              {t('home.aboutButton')}
-            </Button>
+              <Button
+                variant="neon"
+                size={{ base: "md", md: "lg" }}
+                px={8}
+                borderRadius="full"
+                _hover={{
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 0 15px #BC13FE',
+                }}
+                _active={{
+                  transform: 'translateY(0)',
+                }}
+                as={RouterLink}
+                to="/about"
+              >
+                {t('home.aboutButton')}
+              </Button>
+              <Button
+                variant="outline"
+                size={{ base: "md", md: "lg" }}
+                px={8}
+                borderRadius="full"
+                borderColor="retro.neonPurple"
+                color="retro.accent"
+                _hover={{
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 0 15px #BC13FE',
+                  bg: 'rgba(188, 19, 254, 0.1)',
+                }}
+                _active={{
+                  transform: 'translateY(0)',
+                }}
+                onClick={() => window.open('/resume.html', '_blank')}
+              >
+                {t('home.cvButton')}
+              </Button>
+            </HStack>
           </VStack>
           
           {/* Sağ taraf: Dijital efekt */}

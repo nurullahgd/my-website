@@ -93,7 +93,7 @@ const NotFound = () => {
               
               <Button
                 as={Link}
-                to="/blog"
+                to="/projects"
                 leftIcon={<Icon as={FaBlog} />}
                 variant="outline"
                 borderColor="retro.neonPurple"

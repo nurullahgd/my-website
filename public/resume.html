@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurullah Gundogdu - Backend Developer CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-text: #666;
+            --border-color: #ddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #fff;
+        }
+
+        a { text-decoration: none; color: var(--accent-color); }
+        
+        /* Header */
+        header { border-bottom: 2px solid var(--primary-color); padding-bottom: 20px; margin-bottom: 25px; }
+        h1 { margin: 0; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; font-size: 28px; }
+        .title { font-size: 18px; color: var(--light-text); margin-top: 5px; font-weight: 500; }
+        .contact-info { margin-top: 10px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 15px; }
+        .contact-info span { display: flex; align-items: center; }
+
+        /* Sections */
+        section { margin-bottom: 25px; }
+        h2 { 
+            font-size: 16px; 
+            text-transform: uppercase; 
+            color: var(--primary-color); 
+            border-bottom: 1px solid var(--border-color); 
+            padding-bottom: 5px; 
+            margin-bottom: 15px; 
+            font-weight: 700;
+        }
+
+        /* Experience & Projects */
+        .job-block { margin-bottom: 20px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+        .company { font-weight: bold; font-size: 16px; }
+        .location { font-style: italic; font-size: 14px; color: var(--light-text); }
+        .role { font-weight: 600; color: var(--text-color); font-size: 15px; }
+        .date { font-size: 14px; color: var(--light-text); min-width: 120px; text-align: right; }
+        
+        ul { margin: 5px 0 10px 0; padding-left: 18px; }
+        li { margin-bottom: 5px; font-size: 14px; color: #444; }
+
+        /* Skills Grid */
+        .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px; }
+        .skill-category { font-weight: bold; color: var(--primary-color); }
+
+        /* Footer / Print Fixes */
+        @media print {
+            body { padding: 0; max-width: 100%; }
+            a { color: #000; text-decoration: none; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nurullah Gündoğdu</h1>
+        <div class="title">Software Developer | Backend Specialist</div>
+        <div class="contact-info">
+            <span>Istanbul, Türkiye</span>
+            <span><a href="mailto:info@nurullahgundogdu.com">info@nurullahgundogdu.com</a></span>
+            <span>+90 545 416 82 93</span>
+            <span><a href="https://www.nurullahgundogdu.com" target="_blank">nurullahgundogdu.com</a></span>
+            <span><a href="https://linkedin.com/in/nurullahgundogdu" target="_blank">LinkedIn</a></span>
+            <span><a href="https://github.com/nurullahgd" target="_blank">GitHub</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p style="font-size: 14px; text-align: justify;">
+            Backend Developer with 2+ years of experience in designing and building scalable microservices and RESTful APIs. 
+            <strong>Specialized in Golang ecosystem</strong> with hands-on experience in <strong>Docker</strong>, 
+            <strong>Kubernetes</strong>, and cloud deployments. Passionate about solving complex architectural challenges, optimizing database performance, 
+            and delivering robust production-ready code.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <span class="skill-category">Languages:</span> Golang, SQL, JavaScript, C# (Familiar)
+            </div>
+            <div>
+                <span class="skill-category">Databases:</span> PostgreSQL, MongoDB, Redis
+            </div>
+            <div>
+                <span class="skill-category">DevOps & Cloud:</span> Docker, Kubernetes, Git, CI/CD, Cloudflare, Railway
+            </div>
+            <div>
+                <span class="skill-category">Web & Mobile:</span> REST API, Fiber (Go), React Native, React.js
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        
+        <div class="job-block">
+            <div class="job-header">
+                <span class="company">Kartelam.com</span>
+                <span class="date">Jun 2023 – Feb 2026</span>
+            </div>
+            <div class="job-header">
+                <span class="role">Full Stack Developer</span>
+                <span class="location">Istanbul, Türkiye</span>
+            </div>
+            <ul>
+                <li>Developing high-performance microservices using <strong>Golang (Fiber)</strong> architecture.</li>
+                <li>Designing scalable RESTful APIs and optimizing MongoDB queries, improving data retrieval speeds for customer-facing dashboards.</li>
+                <li>Implementing containerization strategies with <strong>Docker</strong> and managing deployments via <strong>Kubernetes</strong>.</li>
+                <li>Collaborating with UI/UX teams to integrate React-based frontends with backend services.</li>
+                <li>Building internal tools to streamline operations and automate daily workflows.</li>
+            </ul>
+        </div>
+
+        <div class="job-block">
+            <div class="job-header">
+                <span class="company">PROFEN</span>
+                <span class="date">Mar 2023 – Apr 2023</span>
+            </div>
+            <div class="job-header">
+                <span class="role">Software Developer Intern</span>
+                <span class="location">Istanbul, Türkiye</span>
+            </div>
+            <ul>
+                <li>Contributed to microservice-based projects using <strong>.NET Core</strong> and PostgreSQL.</li>
+                <li>Assisted in designing backend components and refactoring legacy codebases for better maintainability.</li>
+                <li>Gained hands-on experience with REST API development and version control systems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Projects</h2>
+        
+        <div class="job-block">
+            <div class="job-header">
+                <span class="role">
+                    Jewelry Installment Platform (Full Stack)
+                    <span style="font-size: 13px; font-weight: normal; margin-left: 5px; color: #666;">(Private Repository)</span>
+                </span>
+            </div>
+            <ul>
+                <li>Developed a custom financial calculation engine for the jewelry industry using <strong>Golang</strong>.</li>
+                <li>Designed a decoupled architecture: deployed the Backend API to <strong>Railway</strong> and the React Frontend to <strong>Cloudflare Pages</strong>.</li>
+                <li>Implemented complex algorithms for dynamic installment plans and automated interest rate adjustments.</li>
+            </ul>
+        </div>
+
+        <div class="job-block" style="margin-top: 15px;">
+            <div class="job-header">
+                <span class="role">
+                    Real-time Ephemeral Messaging Platform (Go & PocketBase)
+                    <span style="font-size: 13px; font-weight: normal; margin-left: 5px; color: #666;">(Side Project)</span>
+                </span>
+            </div>
+            <ul>
+                <li>Built an anonymous socialization platform extending <strong>PocketBase</strong> with <strong>Golang</strong>, leveraging Goroutines for high-performance core logic.</li>
+                <li>Implemented a <strong>Shadow Table architecture</strong> to comply with Law No. 5651, enabling ephemeral (10 min TTL) user messaging while retaining secure logs.</li>
+                <li>Developed cross-platform mobile clients using <strong>React Native</strong> and integrated <strong>WebSockets</strong> for real-time communication.</li>
+            </ul>
+        </div>
+
+        <div class="job-block" style="margin-top: 15px;">
+            <div class="job-header">
+                <span class="role">
+                    JWT Based Identity Service
+                    <a href="https://github.com/nurullahgd/react-golang-auth" target="_blank" style="font-size: 13px; margin-left: 10px;">[Source Code]</a>
+                </span>
+            </div>
+            <ul>
+                <li>Built a secure, stateless authentication microservice using <strong>Golang</strong> and <strong>JWT</strong> strategies.</li>
+                 <li>Implemented Bcrypt for password hashing and custom middleware for Role-Based Access Control (RBAC).</li>
+                <li>Designed the system to be database-agnostic and highly scalable without server-side session storage.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certificates & Courses</h2>
+        
+        <div class="job-block">
+            <div class="job-header">
+                <span class="role">Go | Modern Programming with Golang</span>
+                <span class="date">Udemy</span>
+            </div>
+            <ul>
+                <li>Comprehensive training on Go syntax, concurrency models, and RESTful API development.</li>
+            </ul>
+        </div>
+        <div class="job-block">
+            <div class="job-header">
+                <span class="role">Kubernetes: From Scratch to Advanced (DevOps)</span>
+                <span class="date">Udemy</span>
+            </div>
+            <ul>
+                <li>Hands-on guide to container orchestration, cluster management, and scaling strategies.</li>
+            </ul>
+        </div>
+
+        <div class="job-block">
+            <div class="job-header">
+                <span class="role">MongoDB Database Education</span>
+                <span class="date">Udemy</span>
+            </div>
+            <ul>
+                <li>Focused on NoSQL database design, aggregation framework, and performance optimization.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="job-header">
+            <span class="company">Anadolu University</span>
+            <span class="date">2023 – Present</span>
+        </div>
+        <div class="role" style="font-weight: normal; font-size: 14px;">B.Sc. in Management Information Systems</div>
+        
+        <div class="job-header" style="margin-top: 15px;">
+            <span class="company">Kocaeli University</span>
+            <span class="date">2021 – 2023</span>
+        </div>
+        <div class="role" style="font-weight: normal; font-size: 14px;">Associate Degree in Computer Programming</div>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <div class="skills-grid">
+            <div>
+                <span class="skill-category">Languages:</span> Turkish (Native), English (Professional Working Proficiency)
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
