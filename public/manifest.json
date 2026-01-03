@@ -13,7 +13,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "/icons/sun-512x512.png.ico",
+      "src": "/icons/sun-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
