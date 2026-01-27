@@ -1,5 +1,7 @@
 // React uygulaması içinde sitemap oluşturucu utility
 export const generateSitemapXML = async () => {
+  const today = new Date().toISOString().split('T')[0];
+
   // XML sitemap oluştur
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -10,7 +12,7 @@ export const generateSitemapXML = async () => {
   <!-- Ana Sayfa -->
   <url>
     <loc>https://nurullahgundogdu.com/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,9 +20,17 @@ export const generateSitemapXML = async () => {
   <!-- Hakkımda Sayfası -->
   <url>
     <loc>https://nurullahgundogdu.com/about</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Brewle Privacy Policy -->
+  <url>
+    <loc>https://nurullahgundogdu.com/brewle-privacy</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>`;
 

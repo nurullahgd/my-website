@@ -6,6 +6,8 @@ async function generateSitemap() {
     console.log('🔄 Sitemap oluşturuluyor...');
     
     // XML sitemap oluştur
+    const today = new Date().toISOString().split('T')[0];
+
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -15,7 +17,7 @@ async function generateSitemap() {
   <!-- Ana Sayfa -->
   <url>
     <loc>https://nurullahgundogdu.com/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -23,9 +25,17 @@ async function generateSitemap() {
   <!-- Hakkımda Sayfası -->
   <url>
     <loc>https://nurullahgundogdu.com/about</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Brewle Privacy Policy -->
+  <url>
+    <loc>https://nurullahgundogdu.com/brewle-privacy</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>`;
 
@@ -34,12 +44,14 @@ async function generateSitemap() {
     fs.writeFileSync(sitemapPath, sitemap, 'utf8');
     
     console.log(`🎉 Sitemap başarıyla oluşturuldu: ${sitemapPath}`);
-    console.log(`📊 Toplam URL sayısı: 2`);
+    console.log(`📊 Toplam URL sayısı: 3`);
     
   } catch (error) {
     console.error('❌ Sitemap oluşturulurken hata:', error.message);
     
     // Hata durumunda statik sitemap oluştur
+    const today = new Date().toISOString().split('T')[0];
+
     const fallbackSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -49,7 +61,7 @@ async function generateSitemap() {
   <!-- Ana Sayfa -->
   <url>
     <loc>https://nurullahgundogdu.com/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,9 +69,17 @@ async function generateSitemap() {
   <!-- Hakkımda Sayfası -->
   <url>
     <loc>https://nurullahgundogdu.com/about</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Brewle Privacy Policy -->
+  <url>
+    <loc>https://nurullahgundogdu.com/brewle-privacy</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>`;
 

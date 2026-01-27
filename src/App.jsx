@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import About from './pages/About';
+import BrewlePrivacy from './pages/BrewlePrivacy';
 import NotFound from './pages/NotFound';
 import Sitemap from './pages/Sitemap';
 import Navbar from './components/Navbar';
@@ -20,6 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/brewle-privacy" element={<BrewlePrivacy />} />
           <Route path="/projects" element={<Blog />} />
           <Route path="/projects/:slug" element={<BlogDetail />} />
           <Route path="/about" element={<About />} />
