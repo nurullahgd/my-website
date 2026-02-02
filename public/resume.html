@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
     <title>Nurullah Gundogdu - Backend Developer CV</title>
     <style>
         :root {
@@ -24,14 +23,64 @@
             background: #fff;
         }
 
-        a { text-decoration: none; color: var(--accent-color); }
+        a { text-decoration: none; color: var(--accent-color); transition: color 0.3s; }
+        a:hover { color: #1a5276; }
         
-        /* Header */
-        header { border-bottom: 2px solid var(--primary-color); padding-bottom: 20px; margin-bottom: 25px; }
-        h1 { margin: 0; color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; font-size: 28px; }
-        .title { font-size: 18px; color: var(--light-text); margin-top: 5px; font-weight: 500; }
-        .contact-info { margin-top: 10px; font-size: 14px; display: flex; flex-wrap: wrap; gap: 15px; }
-        .contact-info span { display: flex; align-items: center; }
+        /* Header - Clean & Organized */
+        header { 
+            border-bottom: 2px solid var(--primary-color); 
+            padding-bottom: 25px; 
+            margin-bottom: 30px; 
+        }
+        
+        h1 { 
+            margin: 0; 
+            color: var(--primary-color); 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            font-size: 32px; 
+            line-height: 1.2;
+        }
+
+        .title { 
+            font-size: 18px; 
+            color: var(--text-color); 
+            margin-top: 5px; 
+            font-weight: 500; 
+            margin-bottom: 15px;
+        }
+
+        /* Header Contact Rows */
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            align-items: center;
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 6px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .separator {
+            margin: 0 10px;
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        .contact-row a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .contact-row a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
 
         /* Sections */
         section { margin-bottom: 25px; }
@@ -45,8 +94,8 @@
             font-weight: 700;
         }
 
-        /* Experience & Projects */
-        .job-block { margin-bottom: 20px; }
+        /* Experience Block */
+        .job-block { margin-bottom: 15px; }
         .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
         .company { font-weight: bold; font-size: 16px; }
         .location { font-style: italic; font-size: 14px; color: var(--light-text); }
@@ -55,6 +104,20 @@
         
         ul { margin: 5px 0 10px 0; padding-left: 18px; }
         li { margin-bottom: 5px; font-size: 14px; color: #444; }
+
+        /* Project Specific Styles */
+        .project-title {
+            font-weight: 600;
+            color: var(--text-color);
+            font-size: 15px;
+        }
+        .project-external-link {
+            font-size: 13px;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .project-external-link:hover { text-decoration: underline; }
 
         /* Skills Grid */
         .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 14px; }
@@ -65,6 +128,8 @@
             body { padding: 0; max-width: 100%; }
             a { color: #000; text-decoration: none; }
             .no-print { display: none; }
+            /* Linklerin URL'lerini yazdırmamak için */
+            a[href]:after { content: none !important; }
         }
     </style>
 </head>
@@ -73,18 +138,28 @@
     <header>
         <h1>Nurullah Gündoğdu</h1>
         <div class="title">Software Developer | Backend Specialist</div>
-        <div class="contact-info">
-            <span>Istanbul, Türkiye</span>
-            <span><a href="mailto:info@nurullahgundogdu.com">info@nurullahgundogdu.com</a></span>
-            <span>+90 545 416 82 93</span>
-            <span><a href="https://www.nurullahgundogdu.com" target="_blank">nurullahgundogdu.com</a></span>
-            <span><a href="https://linkedin.com/in/nurullahgundogdu" target="_blank">LinkedIn</a></span>
-            <span><a href="https://github.com/nurullahgd" target="_blank">GitHub</a></span>
+        
+        <div class="contact-row">
+            <span class="contact-item">23.04.2002</span>
+            <span class="separator">|</span>
+            <span class="contact-item">Bahcelievler, Istanbul, Turkey</span>
+            <span class="separator">|</span>
+            <span class="contact-item"><a href="mailto:info@nurullahgundogdu.com">info@nurullahgundogdu.com</a></span>
+            <span class="separator">|</span>
+            <span class="contact-item">+90 545 416 82 93</span>
+        </div>
+
+        <div class="contact-row">
+            <span class="contact-item"><a href="https://www.nurullahgundogdu.com" target="_blank">nurullahgundogdu.com</a></span>
+            <span class="separator">|</span>
+            <span class="contact-item"><a href="https://linkedin.com/in/nurullahgundogdu" target="_blank">LinkedIn</a></span>
+            <span class="separator">|</span>
+            <span class="contact-item"><a href="https://github.com/nurullahgd" target="_blank">GitHub</a></span>
         </div>
     </header>
 
     <section>
-        <h2>Professional Summary</h2>
+        <h2>Profile</h2>
         <p style="font-size: 14px; text-align: justify;">
             Backend Developer with 2+ years of experience in designing and building scalable microservices and RESTful APIs. 
             <strong>Specialized in Golang ecosystem</strong> with hands-on experience in <strong>Docker</strong>, 
@@ -150,81 +225,54 @@
     </section>
 
     <section>
-        <h2>Key Projects</h2>
+        <h2>Projects</h2>
         
-        <div class="job-block">
+        <div class="job-block" style="margin-bottom: 10px;">
             <div class="job-header">
-                <span class="role">
-                    Jewelry Installment Platform (Full Stack)
-                    <span style="font-size: 13px; font-weight: normal; margin-left: 5px; color: #666;">(Private Repository)</span>
-                </span>
+                <span class="project-title">Jewelry Installment Platform (Full Stack)</span>
+                <a href="https://nurullahgundogdu.com/projects/jewelry-installment-platform-full-stack" target="_blank" class="project-external-link">
+                    [View Project]
+                </a>
             </div>
-            <ul>
-                <li>Developed a custom financial calculation engine for the jewelry industry using <strong>Golang</strong>.</li>
-                <li>Designed a decoupled architecture: deployed the Backend API to <strong>Railway</strong> and the React Frontend to <strong>Cloudflare Pages</strong>.</li>
-                <li>Implemented complex algorithms for dynamic installment plans and automated interest rate adjustments.</li>
-            </ul>
         </div>
 
-        <div class="job-block" style="margin-top: 15px;">
+        <div class="job-block" style="margin-bottom: 10px;">
             <div class="job-header">
-                <span class="role">
-                    Real-time Ephemeral Messaging Platform (Go & PocketBase)
-                    <span style="font-size: 13px; font-weight: normal; margin-left: 5px; color: #666;">(Side Project)</span>
-                </span>
+                <span class="project-title">Brewle: Anonim Chat Coffe & Tea Break (Mobile)</span>
+                <a href="https://nurullahgundogdu.com/projects/brewle-live-brew-tracking-and-chat" target="_blank" class="project-external-link">
+                    [View Project]
+                </a>
             </div>
-            <ul>
-                <li>Built an anonymous socialization platform extending <strong>PocketBase</strong> with <strong>Golang</strong>, leveraging Goroutines for high-performance core logic.</li>
-                <li>Implemented a <strong>Shadow Table architecture</strong> to comply with Law No. 5651, enabling ephemeral (10 min TTL) user messaging while retaining secure logs.</li>
-                <li>Developed cross-platform mobile clients using <strong>React Native</strong> and integrated <strong>WebSockets</strong> for real-time communication.</li>
-            </ul>
         </div>
 
-        <div class="job-block" style="margin-top: 15px;">
+        <div class="job-block" style="margin-bottom: 10px;">
             <div class="job-header">
-                <span class="role">
-                    JWT Based Identity Service
-                    <a href="https://github.com/nurullahgd/react-golang-auth" target="_blank" style="font-size: 13px; margin-left: 10px;">[Source Code]</a>
-                </span>
+                <span class="project-title">JWT Based Identity Service</span>
+                <a href="https://github.com/nurullahgd/react-golang-auth" target="_blank" class="project-external-link">
+                    [View Project]
+                </a>
             </div>
-            <ul>
-                <li>Built a secure, stateless authentication microservice using <strong>Golang</strong> and <strong>JWT</strong> strategies.</li>
-                 <li>Implemented Bcrypt for password hashing and custom middleware for Role-Based Access Control (RBAC).</li>
-                <li>Designed the system to be database-agnostic and highly scalable without server-side session storage.</li>
-            </ul>
         </div>
     </section>
 
     <section>
         <h2>Certificates & Courses</h2>
         
-        <div class="job-block">
+        <div class="job-block" style="margin-bottom: 8px;">
             <div class="job-header">
                 <span class="role">Go | Modern Programming with Golang</span>
-                <span class="date">Udemy</span>
             </div>
-            <ul>
-                <li>Comprehensive training on Go syntax, concurrency models, and RESTful API development.</li>
-            </ul>
         </div>
-        <div class="job-block">
+        <div class="job-block" style="margin-bottom: 8px;">
             <div class="job-header">
                 <span class="role">Kubernetes: From Scratch to Advanced (DevOps)</span>
-                <span class="date">Udemy</span>
             </div>
-            <ul>
-                <li>Hands-on guide to container orchestration, cluster management, and scaling strategies.</li>
-            </ul>
         </div>
 
-        <div class="job-block">
+        <div class="job-block" style="margin-bottom: 8px;">
             <div class="job-header">
                 <span class="role">MongoDB Database Education</span>
-                <span class="date">Udemy</span>
             </div>
-            <ul>
-                <li>Focused on NoSQL database design, aggregation framework, and performance optimization.</li>
-            </ul>
         </div>
     </section>
 
@@ -232,9 +280,9 @@
         <h2>Education</h2>
         <div class="job-header">
             <span class="company">Anadolu University</span>
-            <span class="date">2023 – Present</span>
+            <span class="date">2023 – 2026 (Expected)</span>
         </div>
-        <div class="role" style="font-weight: normal; font-size: 14px;">B.Sc. in Management Information Systems</div>
+        <div class="role" style="font-weight: normal; font-size: 14px;">B.Sc. in Management Information Systems <span style="font-style: italic; color: #666;">(Open Education Faculty)</span></div>
         
         <div class="job-header" style="margin-top: 15px;">
             <span class="company">Kocaeli University</span>
@@ -254,4 +302,3 @@
 
 </body>
 </html>
-
