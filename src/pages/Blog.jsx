@@ -26,8 +26,10 @@ const Blog = () => {
     fetch(`${apiBaseUrl}/api/blogs/`)
       .then(res => res.json())
       .then(data => {
-        // Sadece görünür olan blogları filtrele
-        const visibleBlogs = data.filter(blog => blog.visibility === true);
+        // Sadece görünür olan blogları filtrele ve tarihe göre yeni → eski sırala
+        const visibleBlogs = data
+          .filter(blog => blog.visibility === true)
+          .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
         setBlogs(visibleBlogs);
         setLoading(false);
       })
