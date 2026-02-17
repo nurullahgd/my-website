@@ -97,9 +97,11 @@ const Blog = () => {
                   <Image
                     src={blog.main_image}
                     alt={i18n.language === "tr" ? blog.title.tr_title : blog.title.en_title}
-                    objectFit="cover"
+                    objectFit="contain"
                     w="100%"
-                    h="180px"
+                    maxH="220px"
+                    h="auto"
+                    bg="rgba(5, 6, 27, 0.8)"
                   />
                   <Box p={5} flex="1">
                     <Flex justify="space-between" align="flex-start" mb={2} gap={2}>

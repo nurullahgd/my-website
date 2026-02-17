@@ -80,8 +80,10 @@ const BlogDetail = () => {
           borderRadius="lg"
           mb={6}
           w="100%"
-          maxH="350px"
-          objectFit="cover"
+          maxH="400px"
+          h="auto"
+          objectFit="contain"
+          bg="rgba(5, 6, 27, 0.8)"
         />
         <Flex justify="space-between" align="center" mb={4}>
           <Heading as="h1" size="xl">
