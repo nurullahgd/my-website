@@ -1,260 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nurullah Gundogdu - Software Developer Resume</title>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/icons/sunico.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/icons/sun-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="%PUBLIC_URL%/icons/sun-512x512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#05061B" />
+    <meta
+      name="description"
+      content="Nurullah Gündoğdu - Software Developer | Golang, SQL, MongoDB, JavaScript, React, Redis. Kişisel web sitesi ve blog."
+    />
+    <meta name="keywords" content="Nurullah Gündoğdu, Software Developer, Full Stack Developer, React, JavaScript, TypeScript, Web Development, Blog, Programmer, Developer, Turkey, Türkiye" />
+    <meta name="author" content="Nurullah Gündoğdu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nurullah Gündoğdu - Software Developer" />
+    <meta property="og:description" content="Backend Specialist architecting high-performance microservices with Golang. Focused on scalable system design, Docker, and Kubernetes." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nurullahgundogdu.com" />
+    <meta property="og:site_name" content="Nurullah Gündoğdu" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nurullah Gündoğdu - Software Developer" />
+    <meta name="twitter:description" content="Backend Specialist architecting high-performance microservices with Golang. Focused on scalable system design, Docker, and Kubernetes." />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://nurullahgundogdu.com" />
+    
+    <!-- Language alternatives -->
+    <link rel="alternate" hreflang="tr" href="https://nurullahgundogdu.com" />
+    <link rel="alternate" hreflang="en" href="https://nurullahgundogdu.com" />
+    <link rel="alternate" hreflang="x-default" href="https://nurullahgundogdu.com" />
+    
+    <!-- Sitemap reference -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/sun-192x192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Chakra+Petch:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Nurullah Gündoğdu - Software Developer | Full Stack Developer</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.5;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px;
-            background: #fff;
-        }
-
-        a { text-decoration: none; color: #3498db; }
-        a:hover { text-decoration: underline; color: #1a5276; }
-        
-        /* ATS'nin en sevdiği: Düz Blok Header */
-        header { 
-            border-bottom: 2px solid #2c3e50; 
-            padding-bottom: 15px; 
-            margin-bottom: 20px; 
-            text-align: left;
-        }
-        
-        h1 { 
-            margin: 0 0 5px 0; 
-            color: #2c3e50; 
-            text-transform: uppercase; 
-            letter-spacing: 1px; 
-            font-size: 28px; 
-        }
-
-        .title { 
-            font-size: 18px; 
-            color: #333; 
-            font-weight: 600; 
-            margin-bottom: 10px;
-        }
-
-        .contact-info {
-            font-size: 14px;
-            color: #444;
-            line-height: 1.6;
-        }
-
-        section { margin-bottom: 20px; display: block; }
-        
-        h2 { 
-            font-size: 16px; 
-            text-transform: uppercase; 
-            color: #2c3e50; 
-            border-bottom: 1px solid #ddd; 
-            padding-bottom: 4px; 
-            margin-bottom: 12px; 
-            font-weight: 700;
-        }
-
-        .job-block { margin-bottom: 16px; display: block; }
-        
-        .job-header-top, .job-header-bottom {
-            display: block;
-            width: 100%;
-            margin-bottom: 2px;
-        }
-        .company { font-weight: bold; font-size: 16px; }
-        .date { font-size: 14px; color: #666; float: right; }
-        .role { font-weight: 600; color: #333; font-size: 15px; }
-        .location { font-style: italic; font-size: 14px; color: #666; float: right; }
-        
-        /* Clearfix for float */
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        
-        ul { margin: 4px 0 10px 0; padding-left: 20px; }
-        li { margin-bottom: 6px; font-size: 14px; color: #333; }
-
-        .skills-list p {
-            margin: 4px 0;
-            font-size: 14px;
-        }
-        .skill-category { 
-            font-weight: bold; 
-            color: #2c3e50; 
-        }
-
-        @media print {
-            body { padding: 0; max-width: 100%; }
-            a { color: #000; text-decoration: none; }
-            .no-print { display: none; }
-            a[href]:after { content: none !important; }
-        }
+      /* Scrollbar */ 
+      ::-webkit-scrollbar {
+        width: 8px;
+        background: #05061B;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #7B2CBF, #4CC9F0);
+        border-radius: 10px;
+      }
+      
+      /* Neon seçim efekti */
+      ::selection {
+        background: #BC13FE;
+        color: #ffffff;
+      }
+      
+      /* Sayfa yüklenme animasyonu */
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #05061B;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <noscript>Bu web sitesini görüntülemek için JavaScript'i etkinleştirmeniz gerekiyor.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-    <header>
-        <h1>Nurullah Gundogdu</h1>
-        <div class="title">Software Developer | Backend Specialist</div>
-        <div class="contact-info">
-            23.04.2002 | Bahçelievler, Istanbul, Turkey<br>
-            <a href="mailto:info@nurullahgundogdu.com">info@nurullahgundogdu.com</a> | +90 545 416 82 93<br>
-            <a href="https://www.nurullahgundogdu.com" target="_blank">nurullahgundogdu.com</a> | 
-            <a href="https://linkedin.com/in/nurullahgundogdu" target="_blank">linkedin.com/in/nurullahgundogdu</a> | 
-            <a href="https://github.com/nurullahgd" target="_blank">github.com/nurullahgd</a>
-        </div>
-    </header>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-    <section>
-        <h2>Professional Summary</h2>
-        <p style="font-size: 14px; text-align: justify; margin-top: 5px;">
-            Backend Developer with over 2 years of professional experience in designing and building scalable microservices and RESTful APIs. 
-            Specialized in the Golang ecosystem with hands-on experience in Docker, Kubernetes, and cloud deployments. Passionate about solving complex architectural challenges, optimizing database performance, collaborating with cross-functional teams, and delivering robust, production-ready code.
-        </p>
-    </section>
-
-    <section>
-        <h2>Key Achievements</h2>
-        <ul>
-            <li><strong>End-to-End Architecture:</strong> Successfully bridged the gap between complex business logic and user interfaces by designing decoupled, scalable architectures using the Golang and React ecosystems.</li>
-            <li><strong>High-Performance Systems:</strong> Engineered robust microservices and custom financial calculation engines, prioritizing data integrity (ACID compliance) and low-latency processing for daily transactions.</li>
-            <li><strong>Real-Time Data Flow:</strong> Designed and implemented WebSocket-based real-time communication protocols and ephemeral messaging architectures adhering to strict legal logging standards.</li>
-            <li><strong>Cloud & DevOps Mastery:</strong> Streamlined deployment lifecycles and enhanced system reliability through consistent containerization (Docker) and orchestration practices (Kubernetes), achieving excellent system uptime.</li>
-            <li><strong>Advanced Integrations:</strong> Expanded core platform capabilities by seamlessly integrating external AI APIs and third-party services into secure backend environments.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <p><span class="skill-category">Hard Skills (Languages & Frameworks):</span> Golang, SQL, JavaScript, C#, React.js, React Native, Redux, Fiber (Go)</p>
-            <p><span class="skill-category">Hard Skills (Database & DevOps):</span> PostgreSQL, MongoDB, Redis, Docker, Kubernetes, Git, CI/CD, gRPC, REST API</p>
-            <p><span class="skill-category">Soft Skills & Methodologies:</span> Agile Development, Problem Solving, Cross-Functional Team Collaboration, System Architecture Design</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="company">Kartelam.com</span>
-                <span class="date">Jun 2023 – Feb 2026</span>
-            </div>
-            <div class="job-header-bottom clearfix">
-                <span class="role">Full Stack Developer</span>
-                <span class="location">Istanbul, Turkey</span>
-            </div>
-            <ul>
-                <li>Spearheaded full-stack development lifecycle, designing responsive user interfaces with React and Redux and integrating them with robust Golang backend architectures.</li>
-                <li>Designed, developed, and launched critical internal management modules, notably the Planning Panel and Warehouse Panel, which accelerated daily operations by 40% for cross-functional teams.</li>
-                <li>Optimized backend search algorithms and restructured MongoDB queries, reducing API response times by 60% (from 800ms to 320ms) and improving overall platform scalability.</li>
-                <li>Integrated AI APIs into the core business logic to automate data handling, decreasing manual content processing times by 35% and saving approximately 15 hours per week.</li>
-                <li>Contributed heavily to DevOps and infrastructure stability by configuring containerized workflows with Docker and assisting in Kubernetes deployments, maintaining continuous delivery pipelines.</li>
-            </ul>
-        </div>
-
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="company">PROFEN</span>
-                <span class="date">Mar 2023 – Apr 2023</span>
-            </div>
-            <div class="job-header-bottom clearfix">
-                <span class="role">Software Developer Intern</span>
-                <span class="location">Istanbul, Turkey</span>
-            </div>
-            <ul>
-                <li>Contributed to microservice-based projects using .NET Core and PostgreSQL within an Agile team environment.</li>
-                <li>Assisted in designing backend components and refactoring legacy codebases, resulting in improved code readability and maintainability.</li>
-                <li>Gained hands-on experience with REST API development and collaborative Git version control systems.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="role">Scalable Notification Microservice with Go and gRPC</span>
-                <span class="date"><a href="https://nurullahgundogdu.com/projects/scalable-notification-microservice-with-go-and-grpc" target="_blank">View Project</a></span>
-            </div>
-        </div>
-        
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="role">Jewelry Installment Platform (Full Stack)</span>
-                <span class="date"><a href="https://nurullahgundogdu.com/projects/jewelry-installment-platform-full-stack" target="_blank">View Project</a></span>
-            </div>
-        </div>
-
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="role">Brewle: Anonim Chat Coffee and Tea Break (Mobile)</span>
-                <span class="date"><a href="https://nurullahgundogdu.com/projects/brewle-live-brew-tracking-and-chat" target="_blank">View Project</a></span>
-            </div>
-        </div>
-
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="role">JWT Based Identity Service</span>
-                <span class="date"><a href="https://github.com/nurullahgd/react-golang-auth" target="_blank">View Project</a></span>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Certifications</h2>
-        
-        <div class="job-block" style="margin-bottom: 4px;">
-            <div class="job-header-top clearfix">
-                <span class="role">Go | Modern Programming with Golang</span>
-            </div>
-        </div>
-        <div class="job-block" style="margin-bottom: 4px;">
-            <div class="job-header-top clearfix">
-                <span class="role">Kubernetes: From Scratch to Advanced (DevOps)</span>
-            </div>
-        </div>
-        <div class="job-block" style="margin-bottom: 4px;">
-            <div class="job-header-top clearfix">
-                <span class="role">MongoDB Database Education</span>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <div class="job-block" style="margin-bottom: 10px;">
-            <div class="job-header-top clearfix">
-                <span class="company">Anadolu University</span>
-                <span class="date">2023 – 2027 (Expected)</span>
-            </div>
-            <div class="role" style="font-weight: normal; font-size: 14px;">B.Sc. in Management Information Systems (Open Education Faculty)</div>
-        </div>
-        
-        <div class="job-block">
-            <div class="job-header-top clearfix">
-                <span class="company">Kocaeli University</span>
-                <span class="date">2021 – 2023</span>
-            </div>
-            <div class="role" style="font-weight: normal; font-size: 14px;">Associate Degree in Computer Programming</div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Languages</h2>
-        <div class="skills-list">
-            <p>Turkish (Native), English (Professional Working Proficiency)</p>
-        </div>
-    </section>
-
-</body>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
